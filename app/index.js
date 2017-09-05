@@ -13,28 +13,31 @@ module.exports = yo.generators.Base.extend({
         yo.generators.Base.apply(this, arguments);
 
         this.on('end', function() {
-            var _this  = this;
+            var _this       = this,
+                skipInstall = this.options['skip-install'];
 
             this.installDependencies({
                 npm: true,
                 bower: false,
                 yarn: false,
-                skipInstall: this.options['skip-install'],
+                skipInstall: skipInstall,
                 callback: function () {
-                    console.log(chalk.green.underline.bold('\nNpm install dependencies has completed.\n'));
+                    if (!skipInstall) {
+                        console.log(chalk.green.underline.bold('\nNpm install dependencies has completed.\n'));
 
-                    console.log(
-                        '\nRunning ' + chalk.yellowBright('composer install') +
-                        ' for you to install the required dependencies. If this fails, try running the command yourself.\n'
-                    );
+                        console.log(
+                            '\nRunning ' + chalk.yellowBright('composer install') +
+                            ' for you to install the required dependencies. If this fails, try running the command yourself.\n'
+                        );
 
-                    this.spawnCommand('composer', ['install'])
-                        .on('close', function () {
-                            console.log(chalk.green.underline.bold('\nComposer install dependencies has completed.\n'));
-                            console.log(chalk.redBright.bgYellowBright('\n\nStart grunt build and watch\n'));
+                        this.spawnCommand('composer', ['install'])
+                            .on('close', function () {
+                                console.log(chalk.green.underline.bold('\nComposer install dependencies has completed.\n'));
+                                console.log(chalk.redBright.bgYellowBright('\n\nStart grunt build and watch\n'));
 
-                            _this.spawnCommand('grunt', ['live']);
-                        });
+                                _this.spawnCommand('grunt', ['live']);
+                            });
+                    }
                 }.bind(this) // bind the callback to the parent scope
             });
         });

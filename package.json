@@ -27,7 +27,9 @@
     "yeoman-generator": "^0.17.1",
     "yosay": "^2.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^3.5.0"
+  },
   "files": [
     "app"
   ],
@@ -35,6 +37,6 @@
   "main": "app/index.js",
   "readme": "ERROR: No README data found!",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   }
 }
