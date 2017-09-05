@@ -24,6 +24,7 @@
   "dependencies": {
     "chalk": "^2.1.0",
     "moment": "^2.18.1",
+    "process": "^0.11.10",
     "yeoman-generator": "^0.17.1",
     "yosay": "^2.0.1"
   },

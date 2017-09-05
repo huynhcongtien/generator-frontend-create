@@ -6,7 +6,8 @@ var path        = require('path'),
     yo          = require('yeoman-generator'),
     yosay       = require('yosay'),
     chalk       = require('chalk'),
-    moment      = require('moment');
+    moment      = require('moment'),
+    process     = require('process');
 
 module.exports = yo.generators.Base.extend({
     constructor: function(arg, options) {
