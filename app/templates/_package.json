@@ -1,0 +1,38 @@
+{
+  "name": "<%= _.slugify(projectName) %>",
+  "version": "0.1.0",
+  "description": "<%= _.trim(description) %>",
+  "main": "",
+  "homepage": "",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "~1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-open": "^0.2.3",
+    "load-grunt-tasks": "^3.5.2",
+    "node-env-file": "^0.1.8",
+    "time-grunt": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "<%= _.trim(author) %>",
+  "license": "MIT"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "generator-frontend",
+  "version": "0.0.1",
+  "description": "Scaffolds out a boilerplate for front-end development.",
+  "author": {
+    "name": "Huynh Cong Tien",
+    "email": "congtien2705@gmail.com",
+    "url": "https://github.com/huynhcongtien"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "scaffold",
+    "frontend",
+    "app"
+  ],
+  "homepage": "https://github.com/huynhcongtien/generator-frontend-create",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huynhcongtien/generator-frontend-create.git"
+  },
+  "bugs": {
+    "url": "https://github.com/huynhcongtien/generator-frontend-create/issues"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "moment": "^2.18.1",
+    "yeoman-generator": "^0.17.1",
+    "yosay": "^2.0.1"
+  },
+  "devDependencies": {},
+  "files": [
+    "app"
+  ],
+  "licenses": "MIT",
+  "main": "app/index.js",
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
