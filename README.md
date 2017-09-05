@@ -28,5 +28,5 @@ Scaffolds out some starting files and configs.
 [npm-url]: https://npmjs.org/package/generator-frontend-create
 [travis-image]: https://travis-ci.org/huynhcongtien/generator-frontend-create.svg?branch=master
 [travis-url]: https://travis-ci.org/huynhcongtien/generator-frontend-create
-[daviddm-image]: https://david-dm.org/namics/generator-frontend-create.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/namics/generator-frontend-create
+[daviddm-image]: https://david-dm.org/huynhcongtien/generator-frontend-create.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/huynhcongtien/generator-frontend-create
