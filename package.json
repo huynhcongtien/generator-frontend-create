@@ -1,6 +1,6 @@
 {
   "name": "generator-frontend-create",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scaffolds out a boilerplate for front-end development.",
   "author": {
     "name": "Huynh Cong Tien",
