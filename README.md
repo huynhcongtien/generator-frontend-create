@@ -1,4 +1,4 @@
-# generator-frontend-create [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-frontend-create [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Build Status][appveyor-image]][appveyor-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 Scaffolds out a boilerplate for front-end development with Grunt and Sass.
 
@@ -28,5 +28,7 @@ Scaffolds out some starting files and configs.
 [npm-url]: https://npmjs.org/package/generator-frontend-create
 [travis-image]: https://travis-ci.org/huynhcongtien/generator-frontend-create.svg?branch=master
 [travis-url]: https://travis-ci.org/huynhcongtien/generator-frontend-create
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/r42nixmjsfa1p5mp/branch/master?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/huynhcongtien/generator-frontend-create
 [daviddm-image]: https://david-dm.org/huynhcongtien/generator-frontend-create.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/huynhcongtien/generator-frontend-create
