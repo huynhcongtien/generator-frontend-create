@@ -7,7 +7,13 @@ var path        = require('path'),
     yosay       = require('yosay'),
     chalk       = require('chalk'),
     moment      = require('moment'),
-    os          = require('os');
+    username    = require('username');
+
+var author = '';
+
+username().then(username => {
+    author = username;
+});
 
 module.exports = yo.generators.Base.extend({
     constructor: function(arg, options) {
@@ -52,8 +58,7 @@ module.exports = yo.generators.Base.extend({
     },
 
     askFor: function() {
-        var cb          = this.async(),
-            userName    = process.env.USERNAME || os.userInfo().username;
+        var cb = this.async();
 
         var prompts = [
             {
@@ -82,7 +87,7 @@ module.exports = yo.generators.Base.extend({
             {
                 name: 'author',
                 message: 'Author',
-                'default': userName
+                'default': author
             }
         ];
 
